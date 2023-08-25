@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:taekwondo/screens/branca.dart';
+import 'package:TkFlow/screens/amarela.dart';
+import 'package:TkFlow/screens/branca.dart';
+import 'package:TkFlow/screens/laranja.dart';
+import 'package:TkFlow/screens/verde.dart';
+import 'package:TkFlow/screens/azul.dart';
+import 'package:TkFlow/screens/roxa.dart';
+import 'package:TkFlow/screens/marrom.dart';
+import 'package:TkFlow/screens/vermelha.dart';
+import 'package:TkFlow/screens/preta.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Guia de Exames',
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
+        primarySwatch: Colors.red,
       ),
       home: MyHomePage(),
     );
@@ -24,6 +32,8 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Curriculo Taekwondo'),
+        automaticallyImplyLeading: false,
+        centerTitle: true,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -73,7 +83,7 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => BrancaHome(),
+                        builder: (context) => AmarelaHome(),
                       ),
                     );
                   },
@@ -90,7 +100,7 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => BrancaHome(),
+                        builder: (context) => LaranjaHome(),
                       ),
                     );
                   },
@@ -116,7 +126,7 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => BrancaHome(),
+                        builder: (context) => VerdeHome(),
                       ),
                     );
                   },
@@ -133,7 +143,7 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => BrancaHome(),
+                        builder: (context) => RoxaHome(),
                       ),
                     );
                   },
@@ -150,7 +160,7 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => BrancaHome(),
+                        builder: (context) => AzulHome(),
                       ),
                     );
                   },
@@ -176,7 +186,7 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => BrancaHome(),
+                        builder: (context) => MarromHome(),
                       ),
                     );
                   },
@@ -193,7 +203,7 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => BrancaHome(),
+                        builder: (context) => VermelhaHome(),
                       ),
                     );
                   },
@@ -210,7 +220,7 @@ class MyHomePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => BrancaHome(),
+                        builder: (context) => PretaHome(),
                       ),
                     );
                   },
