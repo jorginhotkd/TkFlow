@@ -9,6 +9,6 @@ Projeto em desenvolvimento em Flutter de um manual para troca de faixa do Taekwo
   
 ![TkFlow (2)](https://github.com/jorginhotkd/Taekwondo/assets/111769025/3c9dde13-c0e4-434a-b4d2-23e52fa65dfa)
 
-<p>Tela do Poomsae (Video com a sequência:</p>
+<p>Tela do Poomsae (Video com a sequência):</p>
 
 ![TkFlow (3)](https://github.com/jorginhotkd/Taekwondo/assets/111769025/81cab127-db95-4bb3-b056-c0d75efe6150)
