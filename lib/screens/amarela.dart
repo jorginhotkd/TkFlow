@@ -3,10 +3,10 @@ import 'package:TkFlow/main.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 void main() {
-  runApp(MyApp1());
+  runApp(MyApp());
 }
 
-class MyApp1 extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,17 +14,17 @@ class MyApp1 extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: BrancaHome(),
+      home: AmarelaHome(),
     );
   }
 }
 
-class BrancaHome extends StatelessWidget {
+class AmarelaHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Exame para faixa Amarela.'),
+        title: Text('Exame para faixa Laranja.'),
         automaticallyImplyLeading: false,
         centerTitle: true,
         leading: IconButton(
@@ -48,28 +48,25 @@ class BrancaHome extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             Text(
-              'Ap Tchagui.\n\n'
-              'Aptcha Oligui.\n\n'
-              'An Tchagui.\n\n'
-              'Bakat Tchagui.\n\n',
+              'Bandal Tchagui.\n\n'
+              'Dolyo Tchagui.\n\n'
+              'Yop Tchagui.\n\n'
+              'Tit Tchagui.\n\n',
             ),
             Text(
               'Kibon Donjak(Posições):\n\n',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             Text(
-              'Ap Kubi Are Maki\n\n'
-              'Ap Kubi Montong Maki\n\n'
-              'Ap Kubi Olgul Maki\n\n'
-              'Ap Kubi Monton Tchirigui\n\n',
+              'Ju-Tchum Seogi Momtong Jirugi\n\n'
+              'Ap Seogi RanSonnal Mok Jirugi\n\n',
             ),
             Text(
               'Formas(Sequência):\n\n',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             Text(
-              'Saju Tchirigui\n\n'
-              'Saju Ap Tchagui\n\n',
+              'Taeguk Il Jang\n\n',
             ),
             SizedBox(height: 20.0),
             Center(
@@ -95,7 +92,7 @@ class BrancaPoomsae extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Saju Jirigui'),
+        title: Text('Taeguk 1 Jang'),
         automaticallyImplyLeading: false,
         centerTitle: true,
         leading: IconButton(
@@ -114,7 +111,7 @@ class BrancaPoomsae extends StatelessWidget {
         children: [
           YoutubePlayer(
             controller: YoutubePlayerController(
-              initialVideoId: '7qAMh9QQG6I',
+              initialVideoId: 'WhkjRruCBTo',
               flags: YoutubePlayerFlags(
                 autoPlay: true,
                 mute: false,
@@ -127,7 +124,7 @@ class BrancaPoomsae extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => BrancaHome(),
+                  builder: (context) => AmarelaHome(),
                 ),
               );
             },
